@@ -1,21 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-button [routerLink]="['/home']">Ir para Página 2</ion-button>
+    <!-- <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    </ion-buttons> -->
+    <ion-title>SHIEP</ion-title>
   </ion-toolbar>
 </ion-header>
-
+ 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="usuario">
+    <h1> Login: </h1>
+    <h2> Senha: </h2>
   </div>
+  <div class="quadrados">
+      <input type="text" placeholder="Digite seu login"><br><br>
+      <input type="text" placeholder="Senha">
+  </div> <br><br>
+   <div class="cadastrarEsquecer">
+      <input type="button" value="ENTRAR"> <br><br>
+      <input type="button" value="Cadastre-se">
+      <input type="button" value="Esqueceu a senha">
+   </div>
 </ion-content>
