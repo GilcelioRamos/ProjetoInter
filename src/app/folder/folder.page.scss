@@ -2,9 +2,8 @@ ion-title{
   color: black;
 }
 ion-content {
-  --ion-background-color: #737880;
+  --ion-background-color: linear-gradient(to bottom, #ac1010, #c13f67, #b873a5, #ada0c3, #c0c2c7);
 }
- 
 .usuario {
   font-weight: 100;
   margin-bottom: 30px;
@@ -14,13 +13,6 @@ ion-content {
  
 }
  
-h3 {
-  margin-bottom: 30px;
-  margin-top: 26px;
-  padding-left: 170px;
-  color: black;
-}
- 
 .cadastrarEsquecer{
     color: white;
     display: flex;
@@ -28,9 +20,16 @@ h3 {
     align-items: center;
     flex-direction: column;
     margin-bottom: 30px;  
+
 }
 input[type="button"]{
-  background-color: rgb(168, 21, 21);
+  background-color: rgb(122, 20, 20);
+  border-radius: 50px;
+  padding: 8px 16px;
+  border: 0px;
+}
+input[type="button"]:last-child{
+  margin-top: 16px;
 }
  
 .quadrados{
@@ -39,7 +38,7 @@ input[type="button"]{
   padding: 10px;
   font-size: 15px;
   margin-top: -110px; 
- 
+  border-radius: 50px;
 }
  
 input[type="text"] {
